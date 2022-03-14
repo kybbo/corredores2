@@ -1,0 +1,39 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Corredores</title>
+<meta name="viewport" content="width=device - width initial - scale = 1.0">	
+<meta charset="UTF-8">
+
+<script src="script/corredores.js"></script>	
+<link rel="stylesheet" type="text/css"  href="styles/corredores.css">
+</head>
+<body onload='document.form1.text1.focus()' >
+<div class="entero">
+	
+<form name="form1" action="#"> 
+<ul>
+<li>
+	<label for="correo">E-Mail</label><br><br>
+	<input type='text' id="correo" name='text1' onblur="ValidateEmail(document.form1.text1)"/></li>
+	<br><br>
+<li>
+	<label for="nombre">Nombre</label><br><br>
+	<input type="text" id="nombre" placeholder="..." onblur="cuatroCaracteres();"><br><br></li>
+</ul>
+</form>
+<p>
+¿Has corrido antes?	
+</p>
+
+  <input type="radio" id="si" name="correr" value="si" onclick="crearCampo();">
+  <label for="si" >Sí</label><br>
+  <input type="radio" id="no" name="correr" value="no" onclick="quitarCampo();">
+  <label for="no">No</label><br>
+<br><br><br>	
+<button class="btn" onclick="mensaje();">Enviar</button>	
+</div>
+<br>
+<br>
+<br>
+</body>	
